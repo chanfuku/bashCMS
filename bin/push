@@ -1,0 +1,6 @@
+#!/bin/bash
+
+pagedir=$(dirname $0)/../pages
+remote=ubuntu_001
+
+rsync -av --delete --exclude '.*' "$pagedir/" "$remote:/var/www/bashcms/pages"
