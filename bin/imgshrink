@@ -21,3 +21,4 @@ while read f ; do
 	convert -auto-orient -geometry 300x300 "$f" "$s" &&
 	gsed -i "s;$tag;$newtag;g" html 
 done
+# hogehoge
